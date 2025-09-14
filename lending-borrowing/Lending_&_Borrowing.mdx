@@ -1,0 +1,71 @@
+---
+title: "Lending & Borrowing"
+description: "Learn how DeFi lending and borrowing protocols work and how to earn interest or access liquidity"
+icon: "handshake"
+---
+
+If you've ever borrowed money from a bank or a loan app, you've probably experienced the **high interest rates**, endless paperwork, and the headache it takes to get approved.
+
+<Warning>Traditional lending involves extensive KYC, credit checks, and gives institutions full control over approval and account management.</Warning>
+
+First, you need to provide various documents for **KYC** (Know Your Customer), sometimes even your grandmother's birth certificate (just kidding, but it feels like it). Then, you're limited to a few types of collateral: usually your salary, property, or some asset the bank is comfortable with.
+
+There's also the part where you need to **prove you're "creditworthy."** The bank checks your credit score, asks about your income, and might even call your employer. Meanwhile, they hold all the power to say *yes* or *no*.
+
+And even if you do obtain the loan, you're still faced with high interest rates, strict repayment schedules, and the risk of having your account frozen or being harassed if you miss a payment.
+
+## DeFi Lending and Borrowing
+
+DeFi (on-chain) borrowing is a stress-free process. No paperwork, no credit checks, a wider range of collateral types, and it's globally available at any time.
+
+<Info>DeFi lending operates through smart contracts that automatically manage collateral, loans, and liquidations without human intervention.</Info>
+
+How? Instead of dealing with humans, you interact with **smart contracts** (automated programs on the blockchain). These contracts handle everything: holding your collateral, tracking your loan, and repayment.
+
+What's even cooler is how you can use collateral of different types and tokens to get a loan i.e, using multiple assets to build a collateral.1
+
+// multiple asset types here
+
+## How Lending and Borrowing Works
+
+Currently, most lending protocols on-chain offer over-collateralized loans, which means that your collateral must be worth more than the amount you are borrowing.
+
+<Note>Over collateralization protects lenders from default risk since borrowers have more value locked than they borrowed.</Note>
+
+//overcollateralized loans 
+
+For example, you can deposit $100 and borrow $50, but not the other way around. This is because it's difficult to determine who would eventually pay their loans.
+
+### How Lending Works
+
+Lending is simply depositing your money in a pool, and similar to a savings account, you earn money (interest) when borrowers use your money.
+
+The lending platform will give your money to borrowers who need it and the interest from the borrowers go to you.
+
+What if the borrowers don't pay back? Then their collaterals will be sold to refund you (called liquidation).
+
+<Tip>As a lender, you're protected by over collateralization and automatic liquidation mechanisms that ensure you get repaid.</Tip>
+
+### How Borrowing Works
+
+Every borrower is a lender. First, you have to lend your tokens as collateral, and then you can borrow tokens worth a fraction of your collateral.
+
+For every token you lend, there’s a maximum amount of money you can borrow  (called the loan-to-value ratio).
+
+The **LTV** is the maximum amount you can borrow compared to the value of your collateral.
+
+<Danger>Monitor your LTV ratio closely. If it exceeds the liquidation threshold due to price movements, your collateral will be automatically sold.</Danger>
+
+For example:
+
+- Let’s say the LTV for ETH is 75%.
+- You deposit $1,000 worth of ETH as collateral.
+- You can now borrow up to $750 worth of another token (like USDC).
+
+This ensures the protocol stays safe even if prices swing — your collateral always covers your borrowed amount.
+
+Why not borrow 100%? Crypto prices can be super volatile (imagine ETH suddenly dropping 20% in a day). By borrowing less than your total collateral value, the protocol reduces the risk of losing money if the collateral value drops.
+
+If your collateral falls too much, your position can be **liquidated** to repay the debt and maintain system stability.
+
+Now, let’s review how you can lend and borrow in the next tutorial.

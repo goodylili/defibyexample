@@ -1,0 +1,100 @@
+---
+title: "Interoperability"
+description: "Learn how different blockchains communicate and transfer assets across networks"
+icon: "link"
+---
+
+<Info>
+There are thousands of blockchains operating today, including Ethereum, Solana, Sui, Bitcoin, Cosmos, and many more. If you're active in DeFi, chances are you've already interacted with more than one.
+</Info>
+
+You might hold ETH on Ethereum, trade NFTs on Solana, and stake SUI on the Sui network. **But what happens when you want to move tokens or data between them?**
+
+It's kinda like using different banks, except there’s no standard. Each blockchain is its own island, speaking its own language with other systems for communication.
+
+<Warning>
+Each blockchain was built differently. Different data formats, consensus methods, and smart contract engines. So, when one blockchain sees data from another, it's like reading alien code. It just... doesn't compute.
+</Warning>
+
+## What Is Blockchain Interoperability?
+
+<Check>
+Blockchain interoperability (cross-chain) is the ability for two different blockchain systems to communicate, and that's how it's possible to transfer value between blockchains.
+
+In simple terms, it's the tech that lets you send tokens, messages, or smart contract calls between completely different blockchains.
+</Check>
+
+So, now you can swap your ETH for SOL or send a message from Sui to Ethereum *without needing to jump through hoops or go through a centralised exchange*.
+
+<Tip>
+Interoperability opens up a wide range of possibilities; everyone benefits, regardless of the chain they use most frequently. You're not stuck on one chain anymore. You can hunt down better yields, lower fees, or specific apps across chains.
+</Tip>
+
+Think of them like an on-chain middleman that allows you to transfer tokens and NFTs to your favourite blockchain, even with different token standards.
+
+## Types of Interoperability Systems
+
+There are various forms and types of blockchain interoperability, each working differently to achieve the same outcome.
+
+### **Bridges**
+
+This is the most common form of interoperability. Bridges help you **move tokens from one chain to another**.
+
+**How?** They usually lock tokens on the source chain (the one you're on) and **mint** a wrapped version on the destination chain (the one you're going to).
+
+- Lock ETH on Ethereum → Mint wrapped ETH on Sui.
+- Burn wrapped ETH on Sui → Release the real ETH back on Ethereum.
+
+Bridges are great for simple transfers like (ETH → SUI, SOL → AVAX, etc.)
+
+<Danger>
+Bridges come with risks, though. Most of them rely on external systems, so they are not fully decentralised.
+</Danger> 
+
+### **Interoperability Protocols**
+
+These protocols enable chains to **communicate** natively with each other, provided they adhere to the same rules.
+
+**How?** Each chain runs a **light client** of the other. This means they can **verify each other's state directly**, without relying on third parties like oracles or relayers.
+
+- Chain A sends a packet → Chain B checks it using its built-in logic.
+- No wrapped tokens needed, just validated messages between chains.
+
+Interoperability protocols are ideal for **ecosystem-level communication,** such as Cosmos chains communicating with each other using IBC or Polkadot parachains interacting via the Relay Chain.
+
+But they only work with **compatible chains**. You can’t use IBC to communicate directly with Ethereum or Solana (at least not yet).
+
+### **Cross-Chain Messaging Protocols**
+
+These protocols let **smart contracts on one chain send messages to smart contracts on another chain**.
+
+**How?** They package a message (such as "mint this NFT" or "trigger this action") and then send it through a **messaging layer**. That message is picked up by **relayers or oracles** who deliver and validate it on the target chain.
+
+- Contract A on Ethereum → sends message → Contract B on Sui responds.
+
+These protocols are ideal for **dApps** that require interoperability across multiple chains, such as lending on one chain and borrowing on another.
+
+They’re **powerful**, but still **maturing**. Message delivery and validation can be complex, and security is still evolving.
+
+### **Parallel MPC Interoperable Protocols**
+
+These are **next-gen systems** that enable fast, programmable communication across any chain, **without relying on bridges or relayers**.
+
+**How?** They use **MPC (Multi-Party Computation)** to generate secure signatures that are recognised across multiple chains. Everything is validated by a **decentralised network of nodes** that work together in real-time.
+
+- Transaction on Chain A → gets a sub-second signature → instantly valid on Chain B.
+
+These protocols are ideal for **DeFi protocols**, asset managers, and developers building for **speed and scale** across multiple chains.
+
+It’s **cutting-edge tech**, though, with more moving parts, a wider attack surface, and fewer standards today. However, it’s gaining adoption rapidly.
+
+Here’s a summary of the types of interoperability porotocols:
+
+| **Type** | **What It Does** | **Best For** | **How It Works** | **Risks / Limits** | **Examples** |
+| --- | --- | --- | --- | --- | --- |
+| **Bridges** | Move tokens between chains | Asset transfers | Lock + release or burn + mint | Security risks, often target of exploits | Wormhole, Axelar, Circle CCTP, Orbiter |
+| **Interop Protocols** | Native communication between blockchains | Ecosystem-wide connectivity | Shared rules + light clients | Limited to supported chains | Cosmos (IBC), Polkadot (Relay Chain) |
+| **Cross-Chain Messaging Protocols** | Send messages or smart contract calls between chains | Contract-to-contract calls, dApps | Payloads relayed + validated by oracles/guardians | Complex logic, still maturing in security | LayerZero, Hyperlane, Wormhole, Axelar |
+| **Parallel MPC Interop Protocols** | Native, programmable asset & data interop across any chains | Scalable DeFi, protocol-native asset flows | Sub-second MPC signatures, distributed keys, decentralized consensus | New tech, complex under the hood, wider attack surface | Ika Protocol |
+
+Now, you understand blockchain interoperability. Next, let’s overview Ika Protocol, one of the popular and interesting interoperability projects.

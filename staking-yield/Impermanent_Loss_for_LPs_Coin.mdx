@@ -1,0 +1,40 @@
+---
+title: "Impermanent Loss for LPs Coin"
+description: "Understand impermanent loss and how it affects liquidity providers in AMMs"
+icon: "chart-line-down"
+---
+
+When you provide liquidity on an AMM, you earn a fee every time someone swaps tokens. Sweet, right? Well, there’s a hidden twist many new LPs don’t notice at first: **impermanent loss**.
+
+## What Is Impermanent Loss
+
+**Impermanent loss** occurs when you provide liquidity to a pool and the price of the tokens you deposited decreases (or goes below) compared to when you first deposited them.
+
+It’s called *impermanent* because if prices return to their original level, the loss is erased. However, if you withdraw your tokens while prices are still out of balance, the loss becomes permanent.
+
+In short: you still earn trading fees, but the total value of your tokens is less than if you had just held them in your wallet.
+
+## What Causes Impermanent Loss
+
+The primary cause of impermanent loss is a price fluctuation between the tokens in the pool. 
+
+AMMs will always keep the ratio of tokens in the pool in terms of price, so when the price of one token rises or falls a lot compared to the other, the pool automatically adjusts your share of each token.
+
+Think of the pool as a seesaw. When prices are stable, both sides stay level, friendly and easy. But when one token’s price shoots up (or down), the seesaw tips. The AMM starts "selling" some of the more valuable tokens to "buy" more of the cheaper ones to keep things balanced.
+
+This means you end up holding more of the token that lost value and less of the one that gained. Imagine what happens if you pool two tokens and they lose value.
+
+This all happens automatically in the background. When you finally withdraw, you might realize: "Wait, I’ve got more of the token nobody wants and less of the one that’s booming!"
+
+The bigger the price swing, the bigger the impermanent loss.
+
+## How to Avoid (or Reduce) Impermanent Loss
+
+While you can’t fully escape it (unless you avoid LPing altogether), there are smart ways to reduce it:
+
+- Sometimes, the trading fees you earn can outweigh your impermanent loss. If a pool has a huge volume and high fees, it might still be worth it, even if prices fluctuate.
+- Pair tokens that don’t move much against each other (like USDC/USDT). Since their prices are stable, your risk of impermanent loss is much lower.
+- On V3 AMM platforms like Momentum V3, you can choose narrow price ranges. This makes your capital more efficient, but if the price moves out of range, your liquidity stops working, so watch it closely!
+- Instead of providing two tokens, you can stake or lend just one token in certain protocols. You don’t earn swap fees, but you also don’t face impermanent loss.
+
+Impermanent loss isn’t too bad. You just need to get better at playing the LP game. If you understand it and plan for it, you can still earn great passive income.

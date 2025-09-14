@@ -1,0 +1,88 @@
+---
+title: "Yield Derivative Protocols"
+description: "Explore advanced yield strategies using derivative protocols to optimize returns"
+icon: "chart-mixed"
+---
+
+You can relate DeFi yield farming to agricultural farming. You plant seeds (your funds) and wait for a harvest (rewards and yield).
+
+What if you didn’t want to wait? What if you could **sell your future harvest today** to someone else in exchange for money upfront?
+
+That’s what **yield derivatives protocols** let you do in DeFi.
+
+## Understanding Yield Derivatives
+
+First, let’s define yield and derivatives and eventually build up to yield derivatives and how they work.
+
+### What Is Yield
+
+**Yield** is your reward for putting capital to work. 
+
+When you stake tokens, provide liquidity, or deposit into lending protocols, you earn returns in the form of **interest**, **fees**, or **staking rewards**. That’s yield!
+
+### What Is a Derivative
+
+A **derivative** is a financial product whose value is derived from something else. In other words, it's a contract that derives its value from an underlying asset, index, or rate.
+
+You’re not trading the thing itself. You’re trading a **contract about the thing**.
+
+Derivatives are handy for representing real-world assets like real estate, food items, etc. that cannot be physically represented on a blockchain. 
+
+They allow you to speculate on price movements, hedge risks, and access markets that might otherwise be difficult to participate in directly. 
+
+### What Are Yield Derivatives?
+
+Yield Derivatives are derivatives that are specifically based on the future of yield on an asset.
+
+Instead of holding your yield-bearing asset and waiting patiently, you break it apart:
+
+- One piece represents your **principal** (like your land or trees).
+- Another piece represents your **future yield** (like the fruits that’ll grow).
+
+and you can trade those pieces separately.
+
+This means you can:
+
+- Keep the principal asset and sell off the future yield now.
+- Buy someone else's yield if you think rewards will go up.
+- Build all sorts of creative strategies using these parts.
+
+It's all about speculation and flexibility so that you can maximize returns, hedge against risk, or secure predictable outcomes regardless of market conditions. 
+
+In DeFi, the principal asset and yield asset are in the form of tokens:
+
+- **PT (Principal Token)** represents your original asset. It’s locked until a set maturity date. After that, you can redeem it fully.
+- **YT (Yield Token)** represents the rights to the **future yield** from that same asset. Whoever holds the YT gets the staking rewards until maturity.
+
+You can trade these tokens on DEXs, pair them with liquidity pools to earn trading fees, and combine them with other DeFi apps and protocols.
+
+## How Yield Derivative Protocols Work
+
+![Screenshot 2025-08-03 at 19.35.19.png](/images/Yield_Derivative_Protocols/Screenshot_2025-08-03_at_19.35.19.png)
+
+Everything starts with the yield-bearing tokens, e.g, Sui or USDC, deposited into the yield derivative protocol like Nemo protocol.
+
+The platform splits the tokens into the PT and YT tokens:
+
+- Your asset is split into **PT (Principal Token)**:
+    - Represents your original staked token (e.g., 1 sSUI).
+    - Redeemable 1:1 at maturity.
+    - Trades at a **discount** since it omits yield.
+- And **YT (Yield Token)**:
+    - Represents **all future yield + platform points.**
+    - Whoever holds YT collects rewards until the pool matures.
+
+You’ve now tokenized yield into tradable pieces.
+
+Once PT + YT are minted, you have strategic options:
+
+- Sell YT (e.g. YT‑sSUI) for USDC. You get cash today, while still holding PT and underlying yield exposure.
+- If you anticipate yield (or farming points) rising, buying YT gives you **leveraged upside**.
+
+Holding PT and YT tokens has the same effect as holding the same token.
+
+You can also add liquidity to PT/Asset pools (or PT + Asset) to earn fees and incentives.
+
+Each asset/token you tokenize has a fixed maturity. On maturity, the YT expires, and then **PT holders can redeem** their tokens for the full underlying asset (1:1).
+
+Any LP positions involving PT and the underlying token also convert to the underlying.

@@ -1,89 +1,94 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mint Starter Kit",
+  "theme": "linden",
+  "name": "DeFi By Example",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#010101",
+    "light": "#FAFAFA",
+    "dark": "#010101"
   },
   "favicon": "/favicon.svg",
   "navigation": {
-    "tabs": [
+    "groups": [
+    
       {
-        "tab": "Guides",
-        "groups": [
-          {
-            "group": "Getting started",
-            "pages": [
-              "index",
-              "quickstart",
-              "development"
-            ]
-          },
-          {
-            "group": "Customization",
-            "pages": [
-              "essentials/settings",
-              "essentials/navigation"
-            ]
-          },
-          {
-            "group": "Writing content",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
-            ]
-          }
+        "group": "Foundations",
+        "pages": [
+          "foundations/defi_foundation",
+          "foundations/Public_Blockchains"
         ]
       },
       {
-        "tab": "API reference",
-        "groups": [
-          {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
-            ]
-          }
+        "group": "Trading",
+        "pages": [
+          "trading/DEXs_and_AMMs",
+          "trading/Token_Swaps",
+          "trading/DEX_Aggregators",
+          "trading/Orderbook_DEXs",
+          "trading/Trading_on_an_Orderbook",
+          "trading/Leverage_Trading",
+          "trading/Perps_and_Future_Trading",
+          "trading/Prediction_Markets"
+        ]
+      },
+      {
+        "group": "Lending & Borrowing",
+        "pages": [
+          "lending-borrowing/Lending_&_Borrowing",
+          "lending-borrowing/Lending_&_Borrowing_Tutorial",
+          "lending-borrowing/Liquidations",
+          "lending-borrowing/Introduction_to_Looping"
+        ]
+      },
+      {
+        "group": "Staking & Yield",
+        "pages": [
+          "staking-yield/Staking",
+          "staking-yield/Liquid_Staking",
+          "staking-yield/Liquidity_Provision",
+          "staking-yield/Yield_Farming",
+          "staking-yield/Yield_Derivative_Protocols",
+          "staking-yield/Impermanent_Loss_for_LPs_Coin"
+        ]
+      },
+      {
+        "group": "Infrastructure",
+        "pages": [
+          "infrastructure/Wallet_&_Self-Custody",
+          "infrastructure/Stablecoins",
+          "infrastructure/Tokenization",
+          "infrastructure/Token_Launchpads"
+        ]
+      },
+      {
+        "group": "Advanced Concepts",
+        "pages": [
+          "advanced-concepts/BTC_FI",
+          "advanced-concepts/Interoperability"
         ]
       }
     ],
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
+          "anchor": "Website",
+          "href": "https://linktr.ee/goodylili",
+          "icon": "globe"
         },
         {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
+          "anchor": "X (Twitter)",
+          "href": "https://x.com/goodylili",
+          "icon": "X"
         },
         {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "anchor": "Discord",
+          "href": "https://discord.com/goodylili",
+          "icon": "discord"
+        },
+        {
+          "anchor": "Telegram",
+          "href": "https://t.me/goodylili",
+          "icon": "telegram"
         }
       ]
     }
@@ -95,15 +100,10 @@
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "label": "GitHub",
+        "href": "https://github.com/goodylili/defibyexample"
       }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
-    }
+    ]
   },
   "contextual": {
     "options": [
@@ -119,9 +119,7 @@
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "github": "https://github.com/goodylili/defibyexample"
     }
   }
 }

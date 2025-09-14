@@ -1,0 +1,47 @@
+---
+title: "Liquidations"
+description: "Understand how liquidations work in DeFi lending and how to protect your positions"
+icon: "triangle-exclamation"
+---
+
+**Liquidation** is what happens when you don't keep your loan safe (or if the market moves against you) and your collateral value drops below a certain threshold.
+
+<Danger>Liquidation is automatic and irreversible. There are no warnings or grace periods when your collateral value drops too low.</Danger>
+
+Think of it like this: imagine you borrowed $750 using $1,000 worth of ETH as collateral. If ETH's price crashes, your $1,000 worth of ETH might suddenly be worth only $800. Now, your collateral no longer comfortably covers your $750 loan.
+
+Protocols can't just cross their fingers and hope you'll repay. Instead, they **automatically sell** (liquidate) your collateral to repay your debt and protect the lenders.
+
+## When does Liquidation Happen?
+
+Protocols use a "health factor" or "liquidation threshold" to measure how risky your loan has become.
+
+<Info>Health factor above 1.5 is generally considered safe, while anything below 1.2 puts you at high risk of liquidation.</Info>
+
+- A high health factor = you're safe.
+- A low health factor = you're getting close to liquidation.
+- If it drops below 1 (or another set value, depending on the protocol), liquidation is triggered.
+
+This all happens automatically, without warnings or phone calls from a banker. The smart contract enforces the rules instantly and impartially.
+
+## How Liquidation Works
+
+When you're liquidated:
+
+1. Part or all of your collateral is sold off at a discounted price to liquidators.
+2. The debt you owed is repaid with the proceeds from this sale.
+3. If there's any leftover collateral after repaying your debt, it usually gets returned to you.
+
+<Warning>Liquidation often involves a penalty fee (5 to 15%), meaning you lose more than just the borrowed amount.</Warning>
+
+This mechanism keeps the protocol solvent and ensures that lenders don't lose money even if markets crash.
+
+How do you avoid liquidation?
+
+**Just keep your health factor healthy.** Regularly monitor your position and maintain a safe buffer.
+
+<Tip>Set up alerts or check your positions daily during volatile market conditions to avoid unexpected liquidations.</Tip>
+
+If your health factor starts dropping, you can deposit more collateral to bring it back up. Reducing your debt reduces the risk of liquidation.
+
+<Check>Always maintain a health factor above 1.5 and consider partial repayment during market downturns to stay safe.</Check>

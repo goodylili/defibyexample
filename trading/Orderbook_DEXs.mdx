@@ -1,0 +1,90 @@
+---
+title: "Orderbook DEXs"
+description: "Explore how orderbook-based decentralized exchanges work differently from AMMs using traditional trading mechanisms"
+icon: "list-ol"
+---
+
+In the previous tutorial, we discussed **AMM** (Automated Market Maker) and how it enables instant token exchange with liquidity pools, operating in a vending machine-style manner.
+
+AMMs aren’t the only way to trade. Before DeFi introduced AMMs, order books were already in use in traditional finance, especially in the stock market.
+
+Orderbooks are more sophisticated, and they have their benefits that make them more desirable to trading with AMMs.
+
+## What Is an Orderbook
+
+In crypto (and in traditional finance), an **orderbook** is a list of all the open buy and sell orders for a particular trading pair.
+
+Each time someone wants to buy or sell a token, they submit an *order* which is just a message that says what they want and at what price.
+
+Here’s what it looks like in action:
+
+- **Buy Order (a.k.a. bid):** “I want to buy 5 ETH at $2,800 each.”
+- **Sell Order (a.k.a. ask):** “I want to sell 5 ETH at $3,000 each.”
+
+These orders are listed on the **orderbook**, like a scoreboard showing who’s buying, who’s selling, and at what price. The exchange constantly checks both sides and **matches buyers and sellers when their prices overlap**.
+
+When there’s a match: say, someone is willing to sell SUI for $2 and a buyer is ready to pay that amount, the exchange automatically executes the trade.
+
+Ordebooks always have two parts:
+
+- The **Buy Side** (bids): people who want to buy the token.
+- The **Sell Side** (asks): people who want to sell the token.
+
+Each side has multiple offers at different prices, sorted by how attractive they are:
+
+- On the **buy side**, the **highest** price someone is willing to pay comes first.
+- On the **sell side**, the **lowest** price someone is willing to accept comes first.
+
+The best buy and best sell prices are known as the **bid price** and **ask price**, and the gap between them is called the **spread**.
+
+### Limit Orders and Market Orders
+
+There are two main types of orders  you’ll use on orderbooks:
+
+1. **Limit Order:** You choose the exact price you want to buy or sell at. Your order goes onto the orderbook and waits until someone matches it.
+    - "I want to buy 100 SUI at $0.45."
+    - Great for saving money or setting price alerts.
+2. **Market Order:** You buy or sell **right now** at the best available price. No waiting.
+    - "Just give me 100 SUI at the current market rate."
+    - Good when speed matters more than price.
+
+How do orderbooks compare to AMMs, and why are they a big deal in crypto today?
+
+## Why Orderbooks?
+
+AMMs made swapping easy. You don’t have to think: just click swap and it’s done.
+
+But sometimes, you want **more control**:
+
+- You want to decide *what price* you’re willing to pay.
+- You want to avoid *getting wrecked by slippage*.
+- You want to see *what the market is doing* before jumping in.
+
+That’s where **orderbooks** shine. Orderbooks give you visibility, flexibility, and **precision**.
+
+When you want more control, orderbooks let you:
+
+- **Set a limit price.** Don’t want to pay more than $1.02 for that token? Cool, place an order and wait.
+- **See the market depth.** You get a visual feel of who’s buying, who’s selling, and how much.
+- **Avoid slippage.** Especially useful if you’re trading large amounts or volatile tokens.
+
+Orderbooks are also better for **larger trades,** where AMMs might slip the price against you if the pool is small or volatile.
+
+### Orderbook DEXs vs AMMs
+
+DeFi initially adopted AMMs because they solved a critical problem: providing constant liquidity without requiring active market makers.
+
+When there’s great liquidity and active market makers, orderbooks outshine AMMs
+
+Let's compare orderbook DEXs with traditional AMMs across different aspects:
+
+| **Feature** | **AMMs** | **Orderbook DEXs** |
+| --- | --- | --- |
+| **Trading Partner** | A liquidity pool (smart contract) | Another user (peer-to-peer) |
+| **Price Determination** | By a formula (e.g., x*y=k) | By users posting bids and asks |
+| **Slippage Risk** | Medium to high | Low. You set your price |
+| **Speed** | Instant, always available | Instant if you match; wait if not |
+| **Market Visibility** | None. You just accept a price | Full depth of market shown |
+| **Custom Orders** | Not available | Yes, limit, stop, time-based, etc. |
+
+Use AMMs when you want simple swaps and fast experience and Orderbooks when you’re actively trading, need precision, or you have big orders.
