@@ -13,9 +13,13 @@
     
       {
         "group": "Foundations",
+        "icon": "book",
         "pages": [
           "foundations/defi_foundation",
-          "foundations/Public_Blockchains"
+          "foundations/Public_Blockchains",
+          "foundations/Wallet_&_Self-Custody",
+          "foundations/Tokenization",
+          "foundations/Stablecoins"
         ]
       },
       {
@@ -51,20 +55,13 @@
           "staking-yield/Impermanent_Loss_for_LPs_Coin"
         ]
       },
-      {
-        "group": "Infrastructure",
-        "pages": [
-          "infrastructure/Wallet_&_Self-Custody",
-          "infrastructure/Stablecoins",
-          "infrastructure/Tokenization",
-          "infrastructure/Token_Launchpads"
-        ]
-      },
+
       {
         "group": "Advanced Concepts",
         "pages": [
           "advanced-concepts/BTC_FI",
-          "advanced-concepts/Interoperability"
+          "advanced-concepts/Interoperability",
+          "advanced-concepts/Token_Launchpads"
         ]
       }
     ],
@@ -96,6 +93,9 @@
   "logo": {
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg"
+  },
+   "background": {
+    "decoration": "grid"
   },
   "navbar": {
     "links": [
