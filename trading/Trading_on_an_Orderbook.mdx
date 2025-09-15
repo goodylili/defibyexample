@@ -1,7 +1,7 @@
 ---
-title: "Trading on an Orderbook"
-description: "Learn practical orderbook trading with limit orders, market depth analysis, and different order types"
-icon: "chart-line"
+title: "Orderbook Trading"
+description: "Place orders and execute trades on orderbook"
+icon: "clipboard-list"
 ---
 
 You've learned about orderbooks and how they allow anyone can view market depth and place limit orders at specific prices for buying and selling assets, rather than accepting the current market price.
@@ -14,68 +14,70 @@ In this tutorial, you’ll learn the practical aspects of using orderbooks to vi
 
 You’ll learn how to use Orderbooks by trading perps on Bluefin’s Orderbook. All orderbooks are the same by nature so what you learn should be valuable for you when you’re using other apps.
 
-### Visit the Orderbook App
+<Steps>
+  <Step title="Visit the Orderbook App" icon="globe">
+    Step 1: Visit the orderbook app and sign in to get started. You can visit Bluefin perps at [https://trade.bluefin.io/pro/BTC-PERP](https://trade.bluefin.io/pro/BTC-PERP).
 
-Visit the orderbook app and sign in to get started. You can visit Bluefin perps at [https://trade.bluefin.io/pro/BTC-PERP](https://trade.bluefin.io/pro/BTC-PERP).
+    ![Screenshot 2025-08-03 at 09.34.13.png](/images/Trading_on_an_Orderbook/Screenshot_2025-08-03_at_09.34.13.png)
+  </Step>
+  
+  <Step title="Check Out the Orderbook" icon="list">
+    Step 2: You can check out the trade on the Orderbook with the prices and select any of the orders to match a trade. 
 
-![Screenshot 2025-08-03 at 09.34.13.png](/images/Trading_on_an_Orderbook/Screenshot_2025-08-03_at_09.34.13.png)
+    ![Screenshot 2025-08-03 at 09.41.07.png](/images/Trading_on_an_Orderbook/Screenshot_2025-08-03_at_09.41.07.png)
+  </Step>
+  
+  <Step title="Check out the Trading Section" icon="chart-line">
+    Step 3: On the right side you'll find where you can buy/long and sell/short tokens with different order types.
 
-### Check Out the Orderbook
+    Toggle different order types to set the order you want when you want to trade.
 
-You can check out the trade on the Orderbook with the prices and select any of the orders to match a trade. 
+    ![Screenshot 2025-08-03 at 09.39.16.png](/images/Trading_on_an_Orderbook/Screenshot_2025-08-03_at_09.39.16.png)
+  </Step>
+  
+  <Step title="Place Market Orders" icon="bolt">
+    Step 4: Market orders are executed immediately at the best available price. They're useful when you want to buy or sell quickly without waiting for a specific price.
 
-![Screenshot 2025-08-03 at 09.41.07.png](/images/Trading_on_an_Orderbook/Screenshot_2025-08-03_at_09.41.07.png)
+    To place a market order:
 
-### Check out the Trading Section
+    - Select "Market" from the order type dropdown
+    - Enter the quantity you want to trade
+    - Click "Buy/Long" (green button) or "Sell/Short" (red button)
 
-On the right side you’ll find where you can buy/long and sell/short tokens with different order types.
+    Market orders guarantee execution but not price. In volatile markets, you might experience slippage: getting a slightly different price than expected.
 
-Toggle different order types to set the order you want when you want to trade.
+    ![Screenshot 2025-08-03 at 09.38.57.png](/images/Trading_on_an_Orderbook/Screenshot_2025-08-03_at_09.38.57.png)
+  </Step>
+  
+  <Step title="Place Limit Orders" icon="target">
+    Step 5: Limit orders allow you to specify the exact price at which you want to buy or sell. They're ideal when you want to get a specific price rather than accepting whatever is currently available.
 
-![Screenshot 2025-08-03 at 09.39.16.png](/images/Trading_on_an_Orderbook/Screenshot_2025-08-03_at_09.39.16.png)
+    To place a limit order:
 
-### Place Market Orders
+    - Select "Limit" from the order type dropdown
+    - Enter the price at which you want to execute the trade
+    - Enter the quantity you want to trade
+    - Click "Buy/Long" (green button) or "Sell/Short" (red button).
 
-Market orders are executed immediately at the best available price. They're useful when you want to buy or sell quickly without waiting for a specific price.
+    Limit orders guarantee price but not execution. Your order will only fill when the market reaches your specified price. If the market doesn't reach your price, your order remains unfilled in the orderbook.
 
-To place a market order:
+    ![Screenshot 2025-08-03 at 09.39.59.png](/images/Trading_on_an_Orderbook/Screenshot_2025-08-03_at_09.39.59.png)
+  </Step>
+  
+  <Step title="Place Conditional Orders" icon="cog">
+    Step 6: Conditional orders let you create orders that only trigger when certain market conditions are met. They're especially useful for implementing stop losses or taking profits at predetermined price levels.
 
-- Select "Market" from the order type dropdown
-- Enter the quantity you want to trade
-- Click "Buy/Long" (green button) or "Sell/Short" (red button)
+    To place a conditional order:
 
-Market orders guarantee execution but not price. In volatile markets, you might experience slippage: getting a slightly different price than expected.
+    - Select "Conditional" from the order type dropdown.
+    - Set your trigger price (the price at which your order activates).
+    - Choose your order type (market or limit) that will execute after triggering.
+    - Enter the quantity you want to trade.
 
-![Screenshot 2025-08-03 at 09.38.57.png](/images/Trading_on_an_Orderbook/Screenshot_2025-08-03_at_09.38.57.png)
+    Conditional orders help automate your trading strategy and manage risk. They remain dormant until the market reaches your trigger price, at which point they become active orders in the orderbook.
 
-### Place Limit Orders
-
-Limit orders allow you to specify the exact price at which you want to buy or sell. They're ideal when you want to get a specific price rather than accepting whatever is currently available.
-
-To place a limit order:
-
-- Select "Limit" from the order type dropdown
-- Enter the price at which you want to execute the trade
-- Enter the quantity you want to trade
-- Click "Buy/Long" (green button) or "Sell/Short" (red button).
-
-Limit orders guarantee price but not execution. Your order will only fill when the market reaches your specified price. If the market doesn't reach your price, your order remains unfilled in the orderbook.
-
-![Screenshot 2025-08-03 at 09.39.59.png](/images/Trading_on_an_Orderbook/Screenshot_2025-08-03_at_09.39.59.png)
-
-### Place Conditional Orders
-
-Conditional orders let you create orders that only trigger when certain market conditions are met. They're especially useful for implementing stop losses or taking profits at predetermined price levels.
-
-To place a conditional order:
-
-- Select "Conditional" from the order type dropdown.
-- Set your trigger price (the price at which your order activates).
-- Choose your order type (market or limit) that will execute after triggering.
-- Enter the quantity you want to trade.
-
-Conditional orders help automate your trading strategy and manage risk. They remain dormant until the market reaches your trigger price, at which point they become active orders in the orderbook.
-
-![Screenshot 2025-08-03 at 09.40.29.png](/images/Trading_on_an_Orderbook/Screenshot_2025-08-03_at_09.40.29.png)
+    ![Screenshot 2025-08-03 at 09.40.29.png](/images/Trading_on_an_Orderbook/Screenshot_2025-08-03_at_09.40.29.png)
+  </Step>
+</Steps>
 
 Other orderbook apps may have other order types and features, depending on what they are trying to achieve but now you know how to trade on Orderbooks.

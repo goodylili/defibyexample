@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "linden",
-  "name": "DeFi By Example",
+  "name": "DeFiByExample",
   "colors": {
     "primary": "#010101",
     "light": "#FAFAFA",
@@ -24,6 +24,7 @@
       },
       {
         "group": "Trading",
+        "icon": "chart-line",
         "pages": [
           "trading/DEXs_and_AMMs",
           "trading/Token_Swaps",
@@ -37,6 +38,7 @@
       },
       {
         "group": "Lending & Borrowing",
+        "icon": "handshake",
         "pages": [
           "lending-borrowing/Lending_&_Borrowing",
           "lending-borrowing/Lending_&_Borrowing_Tutorial",
@@ -46,18 +48,20 @@
       },
       {
         "group": "Staking & Yield",
+        "icon": "coins",
         "pages": [
           "staking-yield/Staking",
           "staking-yield/Liquid_Staking",
           "staking-yield/Liquidity_Provision",
           "staking-yield/Yield_Farming",
-          "staking-yield/Yield_Derivative_Protocols",
+          "staking-yield/yield_derivatives",
           "staking-yield/Impermanent_Loss_for_LPs_Coin"
         ]
       },
 
       {
         "group": "Advanced Concepts",
+        "icon": "graduation-cap",
         "pages": [
           "advanced-concepts/BTC_FI",
           "advanced-concepts/Interoperability",
@@ -90,10 +94,7 @@
       ]
     }
   },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
-  },
+  
    "background": {
     "decoration": "grid"
   },
